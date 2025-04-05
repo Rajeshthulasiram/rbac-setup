@@ -1,2 +1,0 @@
-## After all RBAC yaml file created use the below commmand ##
-   kubectl apply -f rbac-setup/

@@ -1,0 +1,22 @@
+## After all RBAC yaml file created use the below commmand ##
+   kubectl apply -f rbac-setup/
+
+## Verify Resources ##
+🔸 List all Roles
+kubectl get roles -n rajesh-app
+
+🔸 List all RoleBindings
+kubectl get rolebindings -n rajesh-app
+
+🔸 Describe Role
+kubectl describe role <role-name> -n <namespace>
+
+🔸 Describe RoleBindings
+kubectl describe rolebinding <binding-name> -n <namespace>
+
+🔸 List and Describe All in One Namespace
+kubectl get role,rolebinding -n rajesh-app
+kubectl describe role -n rajesh-app
+kubectl describe rolebinding -n rajesh-app
+
+
