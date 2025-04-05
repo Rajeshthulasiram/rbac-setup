@@ -19,4 +19,8 @@ kubectl get role,rolebinding -n rajesh-app
 kubectl describe role -n rajesh-app
 kubectl describe rolebinding -n rajesh-app
 
+🔸 List all roles in count in namespace
+kubectl get role -A -n rajesh-app --no-headers | wc -l
+
+
 
